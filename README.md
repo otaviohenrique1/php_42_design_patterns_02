@@ -1,6 +1,6 @@
-# php_41_design_patterns_01
+# php_42_design_patterns_02
 
-Projeto do curso "Design Patterns em PHP padrões comportamentais" da Alura
+Projeto do curso "Design Patterns em PHP: padrões estruturais" da Alura
 
 ## Links
 

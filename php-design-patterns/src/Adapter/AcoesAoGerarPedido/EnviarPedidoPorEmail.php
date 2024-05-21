@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Iterator\AcoesAoGerarPedido;
+namespace Alura\DesignPattern\Adapter\AcoesAoGerarPedido;
 
 use SplObserver;
 use SplSubject;

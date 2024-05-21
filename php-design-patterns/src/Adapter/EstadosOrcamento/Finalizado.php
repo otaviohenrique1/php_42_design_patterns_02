@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\DesignPattern\Iterator\EstadosOrcamento;
+namespace Alura\DesignPattern\Adapter\EstadosOrcamento;
 
-use Alura\DesignPattern\Iterator\Orcamento;
+use Alura\DesignPattern\Adapter\Orcamento;
 use DomainException;
 
 class Finalizado extends EstadoOrcamento

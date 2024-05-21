@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Iterator;
+namespace Alura\DesignPattern\Adapter;
 
 use Alura\DesignPattern\Iterator\EstadosOrcamento\EmAprovacao;
 use Alura\DesignPattern\Iterator\EstadosOrcamento\EstadoOrcamento;

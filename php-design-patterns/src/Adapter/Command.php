@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Iterator;
+namespace Alura\DesignPattern\Adapter;
 
 interface Command
 {
