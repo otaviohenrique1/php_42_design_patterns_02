@@ -1,0 +1,15 @@
+{
+    "name": "otavio/php-design-patterns",
+    "autoload": {
+        "psr-4": {
+            "Alura\\DesignPattern\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Otavio Henrique de Lima e Silva",
+            "email": "otaviohlsilva@gmail.com"
+        }
+    ],
+    "require": {}
+}
