@@ -27,5 +27,5 @@ $pedidoExportadoZip = new ArquivoZipExportado('pedido.array');
 
 echo $orcamentoExportadoXml->salvar($orcamentoExportado) . PHP_EOL;
 echo $orcamentoExportadoZip->salvar($orcamentoExportado) . PHP_EOL;
-echo $pedidoExportadoZip->salvar($pedidoExportado) . PHP_EOL;
+echo $pedidoExportadoXml->salvar($pedidoExportado) . PHP_EOL;
 echo $pedidoExportadoZip->salvar($pedidoExportado) . PHP_EOL;
