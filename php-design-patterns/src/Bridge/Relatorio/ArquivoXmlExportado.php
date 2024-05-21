@@ -4,6 +4,7 @@ namespace Alura\DesignPattern\Bridge\Relatorio;
 
 use SimpleXMLElement;
 
+/* Bridge */
 class ArquivoXmlExportado implements ArquivoExportado
 {
   private string $nomeElementoPai;
@@ -18,9 +19,8 @@ class ArquivoXmlExportado implements ArquivoExportado
     foreach ($conteudoExportado->conteudo() as $item => $valor) {
       $elementoXml->addChild($item, $valor);
     }
-    $caminhoArquivo = tmpfile();
+    $caminhoArquivo = tempnam(sys_get_temp_dir(), 'xml');
     $elementoXml->asXML($caminhoArquivo);
-
     return $caminhoArquivo;
   }
 }

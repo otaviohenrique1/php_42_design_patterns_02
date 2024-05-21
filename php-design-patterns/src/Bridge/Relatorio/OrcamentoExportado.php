@@ -4,6 +4,7 @@ namespace Alura\DesignPattern\Bridge\Relatorio;
 
 use Alura\DesignPattern\Bridge\Orcamento;
 
+/* Bridge */
 class OrcamentoExportado implements ConteudoExportado
 {
   private Orcamento $orcamento;

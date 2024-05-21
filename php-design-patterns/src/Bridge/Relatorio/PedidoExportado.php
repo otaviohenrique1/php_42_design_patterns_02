@@ -4,6 +4,7 @@ namespace Alura\DesignPattern\Bridge\Relatorio;
 
 use Alura\DesignPattern\Bridge\Pedido;
 
+/* Bridge */
 class PedidoExportado implements ConteudoExportado
 {
   private Pedido $pedido;

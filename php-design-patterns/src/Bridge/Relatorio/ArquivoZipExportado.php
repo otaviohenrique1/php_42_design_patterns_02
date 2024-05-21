@@ -1,10 +1,9 @@
 <?php
 
 namespace Alura\DesignPattern\Bridge\Relatorio;
-
-use Alura\DesignPattern\Bridge\Orcamento;
 use ZipArchive;
 
+/* Bridge */
 class ArquivoZipExportado implements ArquivoExportado
 {
   private string $nomeArquivoInterno;
@@ -15,7 +14,7 @@ class ArquivoZipExportado implements ArquivoExportado
 
   public function salvar(ConteudoExportado $conteudoExportado): string
   {
-    $caminhoArquivo = tmpfile();
+    $caminhoArquivo = tempnam(sys_get_temp_dir(), 'zip');
     $zip = new ZipArchive();
     $zip->open($caminhoArquivo, ZipArchive::CREATE);
     $zip->addFromString($this->nomeArquivoInterno, serialize($conteudoExportado->conteudo()));
