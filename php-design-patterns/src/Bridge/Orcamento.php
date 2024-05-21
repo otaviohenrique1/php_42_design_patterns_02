@@ -1,9 +1,9 @@
 <?php
 
-namespace Alura\DesignPattern\Adapter;
+namespace Alura\DesignPattern\Bridge;
 
-use Alura\DesignPattern\Adapter\EstadosOrcamento\EmAprovacao;
-use Alura\DesignPattern\Adapter\EstadosOrcamento\EstadoOrcamento;
+use Alura\DesignPattern\Bridge\EstadosOrcamento\EmAprovacao;
+use Alura\DesignPattern\Bridge\EstadosOrcamento\EstadoOrcamento;
 use DomainException;
 
 class Orcamento
