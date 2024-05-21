@@ -1,11 +1,8 @@
 <?php
 
-namespace Alura\DesignPattern\Adapter;
+namespace Alura\DesignPattern\Adapter\Http;
 
-class HttpAdapter
+interface HttpAdapter
 {
-  public function post(string $url, array $data = []): void
-  {
-    
-  }
+  public function post(string $url, array $data = []): void;
 }

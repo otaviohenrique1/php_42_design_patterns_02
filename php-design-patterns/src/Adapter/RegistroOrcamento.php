@@ -2,6 +2,7 @@
 
 namespace Alura\DesignPattern\Adapter;
 use Alura\DesignPattern\Adapter\EstadosOrcamento\Finalizado;
+use Alura\DesignPattern\Adapter\Http\HttpAdapter;
 use DomainException;
 
 class RegistroOrcamento
