@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Decorator\AcoesAoGerarPedido;
+namespace Alura\DesignPattern\Composite\AcoesAoGerarPedido;
 
 use SplObserver;
 use SplSubject;
