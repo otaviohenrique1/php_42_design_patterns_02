@@ -4,21 +4,23 @@ namespace Alura\DesignPattern\Composite;
 
 use Alura\DesignPattern\Composite\EstadosOrcamento\EmAprovacao;
 use Alura\DesignPattern\Composite\EstadosOrcamento\EstadoOrcamento;
-use DomainException;
 
-class Orcamento
+class Orcamento implements Orcavel
 {
-  public int $quantidadeItens;
-  public float $valor;
+  // public int $quantidadeItens;
+  // public float $valor;
+
+  private array $itens;
   public EstadoOrcamento $estadoAtual;
 
   public function __construct() {
     $this->estadoAtual = new EmAprovacao();
+    $this->itens = [];
   }
 
   public function aplicaDescontoExtra()
   {
-    $this->valor -= $this->estadoAtual->calculaDescontoExtra($this);
+    // $this->valor -= $this->estadoAtual->calculaDescontoExtra($this);
   }
 
   public function aprova()
@@ -34,5 +36,19 @@ class Orcamento
   public function finaliza()
   {
     $this->estadoAtual->finaliza($this);
+  }
+
+  public function addItem(Orcavel $item)
+  {
+    $this->itens[] = $item;
+  }
+
+  public function valor(): float
+  {
+    return array_reduce(
+      $this->itens,
+      fn(float $valorAcumulado, Orcavel $item) => $item->valor() + $valorAcumulado,
+      0
+    );
   }
 }

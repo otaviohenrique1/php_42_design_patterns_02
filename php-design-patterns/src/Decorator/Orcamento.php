@@ -4,7 +4,6 @@ namespace Alura\DesignPattern\Decorator;
 
 use Alura\DesignPattern\Decorator\EstadosOrcamento\EmAprovacao;
 use Alura\DesignPattern\Decorator\EstadosOrcamento\EstadoOrcamento;
-use DomainException;
 
 class Orcamento
 {
